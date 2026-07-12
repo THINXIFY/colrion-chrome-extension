@@ -152,4 +152,4 @@ Developed by [THINXIFY](https://thinxify.com).
 - **Draggable Reordering**: Full drag-and-drop sorting support for custom palettes and saved colors.
 - **Backup & settings**: Schema-validated JSON backup imports/exports, accessibility settings, and theme toggling.
 #   c o l r i o n - c h r o m e - e x t e n s i o n  
- 
+ "# colrion-chrome-extension" 
