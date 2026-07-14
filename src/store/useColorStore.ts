@@ -40,7 +40,7 @@ interface ColorStore {
   
   // Phase 3 states
   settings: AppSettings;
-  activeTab: 'colors' | 'generator' | 'extract' | 'settings' | 'darkmode';
+  activeTab: 'colors' | 'generator' | 'extract' | 'settings' | 'darkmode' | 'help';
   favoritesOnly: boolean;
   activeWebTabId: number | null;
   activeWebTabUrl: string;
@@ -83,7 +83,7 @@ interface ColorStore {
   toggleFavoriteColor: (id: string) => Promise<void>;
   updateSettings: (settings: Partial<AppSettings>) => Promise<void>;
   importData: (payload: any) => Promise<{ success: boolean; error?: string }>;
-  setActiveTab: (tab: 'colors' | 'generator' | 'extract' | 'settings' | 'darkmode') => void;
+  setActiveTab: (tab: 'colors' | 'generator' | 'extract' | 'settings' | 'darkmode' | 'help') => void;
   setFavoritesOnly: (favOnly: boolean) => void;
   reorderColors: (updatedColors: ColorItem[]) => Promise<void>;
   reorderPalettes: (updatedPalettes: Palette[]) => Promise<void>;

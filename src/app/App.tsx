@@ -22,6 +22,7 @@ import { ColorGenerator } from '../components/ColorGenerator';
 import { ExtractView } from '../components/ExtractView';
 import { SettingsView } from '../components/SettingsView';
 import { DarkModeView } from '../components/DarkModeView';
+import { HelpView } from '../components/HelpView';
 import { useColorStore } from '../store/useColorStore';
 
 export const App: React.FC = () => {
@@ -641,6 +642,11 @@ export const App: React.FC = () => {
         {/* VIEW 5: DARK MODE GENERATOR PANEL */}
         {activeTab === 'darkmode' && (
           <DarkModeView />
+        )}
+
+        {/* VIEW 6: HELP & ABOUT PANEL */}
+        {activeTab === 'help' && (
+          <HelpView />
         )}
 
       </main>

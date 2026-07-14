@@ -8,7 +8,9 @@ import {
   Settings, 
   Sliders, 
   Trash2, 
-  AlertTriangle 
+  AlertTriangle,
+  HelpCircle,
+  ChevronRight
 } from 'lucide-react';
 import { useColorStore } from '../store/useColorStore';
 
@@ -22,7 +24,8 @@ export const SettingsView: React.FC = () => {
     savedColors,
     palettes,
     copySuccess,
-    triggerCopyFeedback 
+    triggerCopyFeedback,
+    setActiveTab
   } = useColorStore();
 
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -315,6 +318,25 @@ export const SettingsView: React.FC = () => {
             <span>Select & Import Backup File</span>
           </button>
         </div>
+      </section>
+
+      {/* Group: Help & About */}
+      <section className="bg-surface/80 border border-surface-border rounded-xl p-3 shadow-md">
+        <button
+          onClick={() => setActiveTab('help')}
+          className="w-full flex items-center justify-between py-1 text-left group outline-none focus-visible:ring-1 focus-visible:ring-brand rounded-lg"
+          title="Open Help & About Guide"
+          aria-label="Open Help and About Guide"
+        >
+          <div className="flex items-center gap-2.5">
+            <HelpCircle size={14} className="text-brand group-hover:scale-110 transition-transform" />
+            <div>
+              <span className="text-xs font-semibold text-text-primary block group-hover:text-brand transition-colors">Help & About</span>
+              <span className="text-[10px] text-text-muted leading-tight block">Guides, FAQ, keyboard shortcuts & support</span>
+            </div>
+          </div>
+          <ChevronRight size={14} className="text-text-muted group-hover:translate-x-0.5 transition-transform" />
+        </button>
       </section>
 
       {/* Group 4: Dangerous Actions */}
