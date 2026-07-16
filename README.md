@@ -37,6 +37,26 @@ Built with **React**, **TypeScript**, **Tailwind CSS**, **Vite**, and **Chrome E
 
 ---
 
+## Screenshots
+
+<div align="center">
+
+| Colors Dashboard | Smart Related Colors |
+|:---:|:---:|
+| ![Colors dashboard with saved colors, palettes, and the active color preview](docs/screenshots/colors-view.png) | ![Generator view showing harmonies, shades, and gradient suggestions](docs/screenshots/generator-view.png) |
+
+| Page Color Extractor | Dark Mode Generator |
+|:---:|:---:|
+| ![Extract view showing a dominant palette scanned from a live webpage](docs/screenshots/extract-view.png) | ![Dark mode generator with before/after comparison and transformed palette](docs/screenshots/darkmode-view.png) |
+
+| Settings | Help Center |
+|:---:|:---:|
+| ![Settings view with theme, copy format, and interface preferences](docs/screenshots/settings-view.png) | ![Help and About panel with guides, FAQ, and support links](docs/screenshots/help-view.png) |
+
+</div>
+
+---
+
 ## Features
 
 | | |
